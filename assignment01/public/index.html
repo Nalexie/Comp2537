@@ -9,122 +9,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="code.js"></script>
 
-    <style>
-        nav {
-            background-color: #333;
-            padding: 10px;
-            display: grid;
-            grid-template-columns: auto auto;
-            justify-content: space-between;
+    <link rel="stylesheet" href="style.css">
 
-        }
-
-        a {
-            text-decoration: none;
-            color: aliceblue;
-            padding: 10px;
-        }
-
-        h1 {
-            display: grid;
-            justify-content: center;
-
-        }
-        main {
-            /* float: left; */
-            /* width: 80%; */
-            /* padding: 10px; */
-            /* background-color: beige; */
-            display: grid;
-            /* flex-direction: row; */
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto;
-            justify-content: center;
-            gap: 10px;
-            
-        }
-        /* .photos {
-            display: grid;
-            gap: 10px;
-            padding: 10px;
-            grid-template-areas:
-                'ga1 ga2 ga3'
-                'ga4 ga5 ga6'
-                'ga7 ga8 ga9'
-            ;
-        } */
-
-        img {
-            /* width: 30%; */
-            /* height: auto; */
-            border-radius: 10px;
-            /* padding: 10px; */
-            width: 100%;
-
-        }
-          .images_group{
-            display: grid;
-            grid-template-rows: auto auto auto;
-            gap: 10px;
-        }
-        .clearfix {
-            overflow: hidden;
-        }
-
-        .clearfix::after {
-            clear: both;
-
-        }
-
-
-        @media screen and (max-width: 800px) {
-            nav {
-                display: grid;
-                grid-column: auto;
-                grid-row: 2;
-                /* align-items: center; */
-                justify-content: center;
-            }
-
-            #L {
-                display: grid;
-                grid-column: auto;
-                grid-row: 2;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-            #R {
-                display: grid;
-                grid-column: auto;
-                grid-row: 1;
-                align-items: center;
-                justify-content: center;
-            }
-
-            main{
-                grid-template-columns: auto;
-                grid-template-rows: auto auto auto;
-                justify-content: stretch;
-                
-            }
-
-           
-        }
-    </style>
+    
 </head>
 
 <body>
     <h1>Pokedex Gallery</h1>
     <nav>
         <span id="L">
-            <a href=""> Link L</a>
-            <a href=""> Link L</a>
-            <a href=""> Link L</a>
+            <a href="search.html"> Search</a>
         </span>
         <span>
-            <a href="" id="R"> Link R</a>
+            <a href="/" id="R"> Home</a>
         </span>
     </nav>
 
