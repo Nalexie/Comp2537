@@ -13,17 +13,20 @@ const express = require('express')
 const app = express()
 app.set('view engine', 'ejs');
 
+
 app.listen(4000, function (err) {
     if (err) console.log(err);
 })
 
-// app.get('/', function (req, res) {
-//     res.send('<h1> GET request to homepages pt2 </h1>')    
+// app.get('/', function (req, res, next) {
+//     res.send((x++) + '<h1> GET request to homepages pt2 </h1>')    
 // })
 
 // app.get('/', function (req, res) {
 //     res.sendFile(_dirname + "/index.html");    
 // })
+
+
 
 app.use(express.static('./public'))
 
