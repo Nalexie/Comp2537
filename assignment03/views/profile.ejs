@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="/style.css" rel="stylesheet" type="text/css"><link rel="stylesheet" href="../public/style.css">
+</head>
+<body>
+
+    <h1>Pokedex Gallery</h1>
+    <nav>
+        <span id="L">
+            <a href="search.html"> Search</a>
+        </span>
+        <span>
+            <a href="/" id="R"> Home</a>
+        </span>
+    </nav>
+
+    <header>
+        <h1> Hi there! </h1>
+        Im from profile.ejs, 
+    </header>
+    
+    <main>
+        <br>
+        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/<%=id%>.png" alt="">
+        <br>
+
+        <div class="information">
+            <h1>
+                This pokemon has the id: <%= id%>
+                <br>
+                <br>
+                This pokemon has the name: <%= name%>
+            </h1>
+        </div>
+        <hr>
+        <div class="stats">
+            <h2>
+                HP: <%=hp %> %
+                <br>
+                <progress id="file" value="<%=hp %>" max="255"> <%=hp %> %</progress>
+                <br>
+                Weight: <%= weight %>%
+                <br>
+                <progress id="file" value="<%= weight %>" max="100"> <%= weight %>% </progress>
+                <br>
+                Attack: <%= attack %>%
+                <br>
+                <progress id="file" value="<%= attack %>" max="100"> <%= attack %>% </progress>
+                <br>
+                Defense: <%= defense %>%
+                <br>
+                <progress id="file" value="<%= defense %>" max="100"> <%= defense %>% </progress>
+                <br>
+                Height: <%=height%>%
+                <br>
+                <progress id="file" value="<%= height %>" max="100"> <%= height %>% </progress>
+                <br>
+                Speed  <%=speed%>%
+                <br>
+                <progress id="file" value="<%=speed%>" max="100"> <%=speed%>% </progress>
+            </h2>
+        </div>
+    </main>
+
+</body>
+</html>
